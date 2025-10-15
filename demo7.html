@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spark Events | Contact</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      background: #eeeef3;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: rgba(21, 86, 152, 0.6);
+      position: absolute;
+      width: 98%;
+      top: 0;
+      z-index: 10;
+    }
+    nav h1 {
+      color: #fff;
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffca28;
+    }
+
+    /* Hero */
+    .hero {
+      height: 50vh;
+      background: url('./images/contact.png') no-repeat center/cover;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+    }
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+    }
+
+    /* Contact Section */
+    .contact {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    .contact-info, .contact-form {
+      flex: 1 1 400px;
+    }
+    .contact-info h2, .contact-form h2 {
+      color: #8e24aa;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .contact-info p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-form input, 
+    .contact-form textarea {
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .contact-form button {
+      padding: 14px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      background: linear-gradient(135deg,#ff6f61,#8e24aa);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .contact-form button:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #ddd;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 30px;
+    }
+    footer h4 {
+      color: #ffca28;
+      margin-bottom: 12px;
+    }
+    footer a {
+      color: #ddd;
+      text-decoration: none;
+      display: block;
+      margin: 6px 0;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: #ff6f61;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>🎉 Spark Events</h1>
+    <div>
+      <a href="./demo1.html">Home</a>
+      <a href="./demo2.html">About</a>
+      <a href="./demo3.html">Events</a>
+      <a href="./demo4.html">Services</a>
+      <a href="./demo5.html">Testimonials</a>
+      <a href="./demo6.html">Gallery</a>
+      <a href="./demo7.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Get In Touch ✨</h2>
+      <p>We'd love to hear from you! Let's plan your perfect event.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="contact-info">
+      <h2>Contact Info</h2>
+      <p>📍 123 Event Street, Celebration City, India</p>
+      <p>📞 +91 98765 43210</p>
+      <p>📧 contact@sparkevents.com</p>
+      <p>🕒 Mon-Sat: 10:00 AM - 7:00 PM</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h4>About Us</h4>
+      <p>Spark Events specializes in weddings, corporate events, and parties. We craft experiences, not just events.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="./demo1.html">Home</a>
+      <a href="./demo2.html">About</a>
+      <a href="./demo3.html">Events</a>
+      <a href="./demo4.html">Services</a>
+      <a href="./demo5.html">Testimonials</a>
+      <a href="./demo6.html">Gallery</a>
+      <a href="./demo7.html">Contact</a>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <a href="#">🌐 Website</a>
+      <a href="#">📘 Facebook</a>
+      <a href="#">📸 Instagram</a>
+    </div>
+  </footer>
+  <div class="footer-bottom">© 2025 Spark Events Management | All Rights Reserved</div>
+</body>
+</html>

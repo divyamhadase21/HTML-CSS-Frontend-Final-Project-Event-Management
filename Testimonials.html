@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spark Events | Testimonials</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: #b71cd2;
+     background: #0a1d3a;;
+
+
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 40px;
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      box-sizing: border-box;
+    }
+
+    nav h1 {
+      color: #f9f7f7;
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffca28;
+    }
+
+    
+
+    /* Hero */
+    .hero {
+      height: 50vh;
+      background: url('your-bg.jpg') center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: rgb(243, 240, 240);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 10px;
+    }
+
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+    }
+
+    .styled-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.styled-divider span {
+  font-size: 2.5rem;
+  margin: 0 15px;
+}
+
+.styled-divider::before,
+.styled-divider::after {
+  content: "";
+  width: 160px;
+  height: 6px;
+  background: #ffffff55;
+}
+
+
+    /* Testimonials Section */
+    .testimonials {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      color: #f1ecf2;
+      font-size: 2.4rem;
+      margin-bottom: 40px;
+    }
+
+    .testimonial-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 0;
+      color: #ff6f61;
+      font-size: 1.1rem;
+    }
+
+    .card span {
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #ddd;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+
+    footer h4 {
+      color: #ffca28;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: #ddd;
+      text-decoration: none;
+      display: block;
+      margin: 6px 0;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #ff6f61;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>🎉 Spark Events</h1>
+    <div>
+      <a href="./Home.html">Home</a>
+      <a href="./About.html">About</a>
+      <a href="./Event.html">Events</a>
+      <a href="./Services.html">Services</a>
+      <a href="./Testimonials.html">Testimonials</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Happy Clients</h2>
+      <p>See what our clients say about Spark Events.</p>
+    </div>
+  </section>
+
+  <div class="styled-divider">
+  <span>🌟</span>
+</div>
+
+
+  <!-- PROFESSIONAL TESTIMONIAL SECTION -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+
+    <div class="testimonial-cards">
+
+      <div class="card">
+        <p>
+          "Spark Events delivered a beautifully organized wedding event. From décor
+          to coordination, every detail was executed flawlessly."
+        </p>
+        <h3>– Arjun & Mitali</h3>
+        <span>Wedding Event</span>
+      </div>
+
+      <div class="card">
+        <p>
+          "Our annual corporate summit was handled with great professionalism.
+          Excellent theme, smooth coordination and outstanding stage design."
+        </p>
+        <h3>– Mr. S. Khurana</h3>
+        <span>Corporate Client</span>
+      </div>
+
+      <div class="card">
+        <p>
+          "We booked Spark Events for a birthday party. Amazing theme planning,
+          decorations, games and hosting. Kids loved everything!"
+        </p>
+        <h3>– Neha & Amit</h3>
+        <span>Birthday Event</span>
+      </div>
+
+      <div class="card">
+        <p>
+          "Their creativity and attention to detail made our engagement ceremony
+          memorable for everyone. Beautiful ambience!"
+        </p>
+        <h3>– Tanvi & Rohan</h3>
+        <span>Engagement Ceremony</span>
+      </div>
+
+      <div class="card">
+        <p>
+          "Outstanding execution of our product launch event. Classy setup and
+          perfect schedule management. Highly recommended!"
+        </p>
+        <h3>– VisionTech Pvt. Ltd.</h3>
+        <span>Corporate Launch</span>
+      </div>
+
+      <div class="card">
+        <p>
+          "Spark Events made our reception feel luxurious. Elegant décor, amazing
+          lighting and smooth coordination."
+        </p>
+        <h3>– Harsh & Riddhi</h3>
+        <span>Reception Event</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h4>About Us</h4>
+      <p>Spark Events specializes in weddings, corporate events, and parties. 
+      We craft experiences, not just events.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="./demo1.html">Home</a>
+      <a href="./demo2.html">About</a>
+      <a href="./demo3.html">Events</a>
+      <a href="./demo4.html">Services</a>
+      <a href="./demo5.html">Testimonials</a>
+      <a href="./demo6.html">Gallery</a>
+      <a href="./demo7.html">Contact</a>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <a href="#">🌐 Website</a>
+      <a href="#">📘 Facebook</a>
+      <a href="#">📸 Instagram</a>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">© 2025 Spark Events Management | All Rights Reserved</div>
+
+</body>
+</html>

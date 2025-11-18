@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spark Events | About</title>
+  <link rel="stylesheet" href="./css/demo1.css">
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    :root{
+       --primary:#0b0a0b;/* purple */
+      --accent:#ff6f61;   /* coral */
+      --muted: rgba(17, 63, 108, 0.6);
+      --text:#222;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
+      color:var(--text);
+      background:linear-gradient(180deg,var(--muted),#fff);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Navbar (same as Home page) */
+ nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  position: absolute;
+  width: 100%;         /* FULL WIDTH */
+  top: 0;
+  left: 0;             /* important */
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+
+nav h1 {
+  color: #fff;
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffca28;
+}
+
+    
+    /* Page hero */
+    .about-hero{
+      display:flex;gap:40px;align-items:center;padding:80px 20px;max-width:1100px;margin:30px auto;border-radius:18px;
+      background:linear-gradient(135deg, rgba(142,36,170,0.08), rgba(255,111,97,0.04));
+      box-shadow:0 10px 30px rgba(14,14,20,0.04);
+    }
+    .about-hero .left{flex:1}
+    .about-hero h2{font-size:2.1rem;margin:0 0 12px;color:var(--primary)}
+    .about-hero p{margin:0 0 18px;line-height:1.6;color:#444}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 20px;border-radius:999px;border:none;cursor:pointer;font-weight:700}
+    .btn-primary{background:linear-gradient(135deg,var(--accent),var(--primary));color:white}
+    .btn-outline{background:transparent;border:2px solid rgba(142,36,170,0.12);color:var(--primary)}
+
+    /* Stats / quick facts */
+    .stats{display:flex;gap:20px;align-items:center}
+    .stat{background:white;padding:16px;border-radius:12px;min-width:140px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+    .stat h3{margin:0;color:var(--primary)}
+    .stat p{margin:6px 0 0;font-size:0.95rem;color:#666}
+
+    /* About content */
+    .container{max-width:1100px;margin:40px auto;padding:0 20px}
+    .two-col{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
+    .card{background:white;padding:22px;border-radius:14px;box-shadow:0 8px 24px rgba(14,14,20,0.03)}
+    .card h3{margin-top:0;color:var(--primary)}
+
+    /* Team */
+    .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-top:18px}
+    .member{background:linear-gradient(180deg,#fff, #fff);padding:18px;border-radius:12px;text-align:center}
+    .avatar{width:88px;height:88px;border-radius:50%;display:inline-grid;place-items:center;font-size:2rem;margin-bottom:12px;background:linear-gradient(135deg,var(--accent),var(--primary));color:#fff;box-shadow:0 8px 20px rgba(142,36,170,0.12)}
+    .member h4{margin:6px 0 4px}
+    .member p{margin:0;font-size:0.9rem;color:#666}
+
+    /* Services list */
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+    .service{padding:16px;border-radius:12px;background:linear-gradient(180deg,rgba(142,36,170,0.04),rgba(255,111,97,0.02));}
+    .service h4{margin:0 0 8px}
+
+    /* Testimonials */
+    .testi{display:flex;gap:12px;overflow:auto;padding-bottom:6px}
+    .bubble{min-width:240px;background:white;padding:14px;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,0.04)}
+
+    /* Contact CTA */
+    .contact-cta{margin:40px auto;max-width:900px;padding:24px;border-radius:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;background:linear-gradient(90deg,rgba(142,36,170,0.06),rgba(255,111,97,0.03))}
+
+    /* Footer keep consistent */
+    footer{background:#222;color:#ddd;padding:28px 20px;margin-top:30px}
+    footer .foot-grid{max-width:1100px;margin:auto;display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between}
+    footer a{color:#ddd;text-decoration:none}
+
+    /* Responsive */
+    @media (max-width:880px){
+      .two-col{grid-template-columns:1fr}
+      .about-hero{flex-direction:column;align-items:flex-start}
+      .about-hero .left{width:100%}
+    }
+  </style>
+</head>
+<!-- Navbar -->
+  <nav>
+    <h1>🎉 Spark Events</h1>
+    <div>
+    <a href="./Home.html">Home</a>
+    <a href="./About.html">About</a>
+    <a href="./Event.html">Events</a>
+    <a href="./Services.html">Services</a>
+    <a href="./Testimonials.html">Testimonials</a>
+    <a href="./gallery.html">Gallery</a>
+    <a href="./contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero / Intro -->
+  <section class="about-hero">
+    <div class="left">
+      <h2>We Create Moments That Sparkle ✨</h2>
+      <p>At Spark Events we believe every celebration deserves a little magic. From intimate elopements to large corporate galas, our team blends creativity and precision so you can enjoy the moment while we take care of the details.</p>
+      <div class="cta-row">
+        <button class="btn btn-primary">Plan Your Event</button>
+        <button class="btn btn-outline" onclick="location.href='./demo4.html'">Our Services</button>
+      </div>
+    </div>
+    <div style="width:380px">
+      <div class="stats">
+        <div class="stat">
+          <h3>500+</h3>
+          <p>Events Crafted</p>
+        </div>
+        <div class="stat">
+          <h3>30</h3>
+          <p>Expert Planners</p>
+        </div>
+      </div>
+      <div style="height:18px"></div>
+      <div class="card">
+        <h3>Our Promise</h3>
+        <p>Personalized designs, transparent pricing, and day-of coordination so you can relax and enjoy.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="two-col">
+      <section class="card">
+        <h3>Our Story</h3>
+        <p>Founded with a love for storytelling and celebration, Spark Events began as a small team of decorators and event lovers. Over the years we've grown into a full-service event management studio that focuses on thoughtful design, sustainable sourcing, and exceptional hospitality.</p>
+        <h3 style="margin-top:18px">How We Work</h3>
+        <ol style="padding-left:18px;line-height:1.7;color:#555">
+          <li><strong>Discover:</strong> We listen to your vision and priorities.</li>
+          <li><strong>Design:</strong> Tailored concepts with mood-boards and samples.</li>
+          <li><strong>Deliver:</strong> Seamless execution and joyful experiences.</li>
+        </ol>
+
+        <h3 style="margin-top:18px">Core Values</h3>
+        <ul style="padding-left:18px;line-height:1.7;color:#555">
+          <li>Creativity with purpose</li>
+          <li>Reliability and transparency</li>
+          <li>Client-first collaboration</li>
+        </ul>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>Quick Info</h3>
+          <p><strong>Location:</strong> Mumbai, India</p>
+          <p><strong>Contact:</strong> +91 98765 43210</p>
+          <p><strong>Email:</strong> hello@sparkevents.com</p>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>What We Offer</h3>
+          <div class="services">
+            <div class="service"><h4>Weddings</h4><p>Full planning, decor & coordination.</p></div>
+            <div class="service"><h4>Corporate</h4><p>Conferences, launches & team events.</p></div>
+            <div class="service"><h4>Private Parties</h4><p>Birthdays, anniversaries & social gatherings.</p></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Team -->
+    <section style="margin-top:28px" class="card">
+      <h3>Meet The Team</h3>
+      <div class="team-grid">
+        <div class="member">
+          <div class="avatar">JS</div>
+          <h4>Jaya Sharma</h4>
+          <p>Founder & Creative Director</p>
+        </div>
+        <div class="member">
+          <div class="avatar">RK</div>
+          <h4>Rohan Kapoor</h4>
+          <p>Head of Operations</p>
+        </div>
+        <div class="member">
+          <div class="avatar">AM</div>
+          <h4>Anita Mehra</h4>
+          <p>Lead Designer</p>
+        </div>
+        <div class="member">
+          <div class="avatar">SS</div>
+          <h4>Sahil S.</h4>
+          <p>Logistics & Production</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="margin-top:22px">
+      <h3 style="color:var(--primary)">What Clients Say</h3>
+      <div class="testi" aria-hidden="false">
+        <div class="bubble">
+          <strong>Priya & Amit</strong>
+          <p style="margin:8px 0 0;color:#555">"Spark Events turned our wedding into a fairytale. Every detail was perfect — and the team felt like family."</p>
+        </div>
+        <div class="bubble">
+          <strong>Acme Corp</strong>
+          <p style="margin:8px 0 0;color:#555">"Professional, punctual and creative — they delivered a flawless product launch for us."</p>
+        </div>
+        <div class="bubble">
+          <strong>Ria</strong>
+          <p style="margin:8px 0 0;color:#555">"Loved the personalized touches and quick responses. Highly recommend."</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Contact CTA -->
+  <section class="contact-cta">
+    <div>
+      <h3 style="margin:0;color:var(--primary)">Ready to start planning?</h3>
+      <p style="margin:6px 0 0;color:#555">Tell us about your event and we'll create a custom plan just for you.</p>
+    </div>
+    <div style="display:flex;gap:10px">
+      <button class="btn btn-outline" onclick="location.href='./demo7.html'">Request Quote</button>
+      <button class="btn btn-primary" onclick="location.href='./demo7.html'">Let's Talk</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-grid">
+      <div>
+        <strong>About Spark Events</strong>
+        <p style="max-width:320px;color:#bbb">Spark Events — crafting memorable celebrations with heart and style.</p>
+      </div>
+      <div>
+        <strong>Quick Links</strong>
+        <div style="margin-top:8px">
+          <a href="./demo1.html">Home</a> • <a href="./demo3.html">Events</a> • <a href="./demo4.html">Services</a>
+        </div>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <p style="margin:6px 0 0;color:#bbb">hello@sparkevents.com<br/>+91 98765 43210</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:18px;color:#888">© 2025 Spark Events Management | All Rights Reserved</div>
+  </footer>
+</body>
+</html>
